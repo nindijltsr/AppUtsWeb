@@ -7,19 +7,21 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* CSS LOGIN.FORM */
+/* CSS UNTUK NAVBAR */
 .navbar {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 50px; 
+  justify-content: center;
+  align-items: center;
+  height: 50px;
   background-color: #333;
   color: #fff;
 }
+
 .navbar-log {
   font-size: 20px;
 }
 
+/* CSS UNTUK WRAPPER */
 .wrapper {
   display: flex;
   justify-content: center;
@@ -29,13 +31,15 @@
   background: url(bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  /* animation: animateBg 5s linear infinite; */
 }
+
 @keyframes animateBg {
   100% {
     filter: hue-rotate(360deg);
   }
 }
+
+/* CSS UNTUK LOGIN BOX */
 .login-box {
   position: relative;
   width: 400px;
@@ -48,17 +52,20 @@
   align-items: center;
   backdrop-filter: blur(15px);
 }
+
 h2 {
   font-size: 2em;
   color: #fff;
   text-align: center;
 }
+
 .input-box {
   position: relative;
   width: 310px;
   margin: 35px 0;
   border-bottom: 1px solid #fff;
 }
+
 .input-box label {
   position: absolute;
   top: 50%;
@@ -69,10 +76,12 @@ h2 {
   pointer-events: none;
   transition: .5s;
 }
+
 .input-box input:focus ~ label,
 .input-box input:valid ~ label {
   top: -5px;
 }
+
 .input-box input {
   width: 100%;
   height: 50px;
@@ -83,6 +92,7 @@ h2 {
   color: #fff;
   padding: 0 35px 0 5px;
 }
+
 .input-box .icon {
   position: absolute;
   right: 8px;
@@ -90,17 +100,19 @@ h2 {
   color: #fff;
   transform: translateY(-50%);
 }
+
+/* PESAN ERROR DAN SUKSES */
 .error-message {
   color: rgb(255, 255, 255);
   font-weight: bold;
   background-color: rgba(255, 0, 0, 0.76);
   padding: 10px;
   margin-top: 10px;
-  /* border-radius: 0px; */
   text-align: center;
   margin-bottom: 10px;
   display: none;
 }
+
 .success-message {
   position: absolute;
   top: 0;
@@ -111,11 +123,12 @@ h2 {
   padding: 15px 20px;
   border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  margin-top:2px ;
+  margin-top: 2px;
   display: none;
   justify-content: center;
   height: 50px;
 }
+
 .success-message button {
   position: absolute;
   top: 10px;
@@ -129,10 +142,13 @@ h2 {
   height: 30px;
   justify-content: center;
 }
+
 .success-message button:hover {
   background: rgba(88, 255, 102, 0.37);
   color: rgb(255, 255, 255);
 }
+
+/* TOMBOL */
 button {
   width: 100%;
   height: 40px;
@@ -145,7 +161,7 @@ button {
   font-weight: 500;
 }
 
-/* ORDER CSS */
+/* CSS UNTUK ORDER */
 .navbar-or {
   display: flex;
   justify-content: space-between;
@@ -154,10 +170,11 @@ button {
   color: #fff;
   padding: 10px 20px;
   text-align: center;
-  font-size: 20px; 
+  font-size: 20px;
   cursor: pointer;
   transition: .3s;
 }
+
 .navbar-or:hover {
   color: #82b5df;
 }
@@ -166,10 +183,12 @@ button {
   display: flex;
   align-items: center;
 }
+
 .navbar-right {
   display: flex;
   align-items: center;
 }
+
 .navbar-link {
   color: #fff;
   text-decoration: none;
@@ -177,79 +196,87 @@ button {
   font-size: 18px;
   transition: .3s;
 }
+
 .navbar-link:hover {
   color: #82b5df;
 }
 
-/* Formulir Pesanan */
+/* FORMULIR PESANAN */
 .orderForm {
-    width: 400px;
-    padding: 20px;
-    background: #000c0ec5;
-    border-radius: 15px;
-    border: 2px solid rgba(255, 255, 255, .5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    color: whitesmoke; /* Tambahkan warna teks secara keseluruhan */
-}
-.orderForm h2 {
-    margin-bottom: 5px;
-    cursor: pointer;
-    transition: .3s;
-}
-.h2-order:hover {
-    color:#82b5df;
+  width: 400px;
+  padding: 20px;
+  background: #000c0ec5;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, .5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  color: whitesmoke;
 }
 
-/* Item dalam formulir */
+.orderForm h2 {
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.h2-order:hover {
+  color: #82b5df;
+}
+
+/* ITEM DALAM FORMULIR */
 h4 {
   margin-top: 6px;
   cursor: pointer;
 }
+
 h4:hover {
-  color:#82b5df;
+  color: #82b5df;
 }
+
 .item {
-    width: 100%;
-    margin: 1px;
-    border-bottom: 1px solid #747171b7;
-    background-color: #000000bd;
-    display: flex;
-    align-items: center;
-    color: #e26e40;
-    transition: .3s;
-    cursor: pointer;
+  width: 100%;
+  margin: 1px;
+  border-bottom: 1px solid #747171b7;
+  background-color: #000000bd;
+  display: flex;
+  align-items: center;
+  color: #e26e40;
+  transition: .3s;
+  cursor: pointer;
 }
+
 .item:hover {
-    background-color: #000000cb;
-    color: #a9cce9;
+  background-color: #000000cb;
+  color: #a9cce9;
 }
+
 .itemName {
-    flex: 1;
-    margin-right: 20px;
+  flex: 1;
+  margin-right: 20px;
 }
+
 .itemCheckbox {
-    margin-right: 8px;
-    cursor: pointer;
+  margin-right: 8px;
+  cursor: pointer;
 }
 
-
-/* BUTTON */
+/* TOMBOL BATAL */
 #cancelButton {
-  background-color: #dc3545; 
-  color: #fff; 
-  padding: 8px 16px; 
-  border: none; 
-  border-radius: 4px; 
-  cursor: pointer; 
-  margin-top: 10px; 
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
   height: 40px;
   width: 100px;
 }
+
 #cancelButton:hover {
-  background-color: #c82333; 
+  background-color: #c82333;
 }
 
 /* FOOTER */
