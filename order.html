@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar-or">
+        <div class="navbar-left-or">
+            <span class="navbar-or">ORDER FORM</span>
+        </div>
+        <div class="navbar-right">
+            <a href="order.html" class="navbar-link">Menu</a>
+            <a href="login.html" class="navbar-link">Logout</a>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div class="orderForm">
+            <h2 class="h2-order">ORDER</h2>
+            <form id="orderForm">
+        <div class="box-item">
+            <h4>Drink</h4>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="15000" data-name="French Fries" />
+                <span class="itemName">Ice Orange Squash</span>
+                <span class="itemPrice">Rp 15.000</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="12000" data-name="Fish and Chips" />
+                <span class="itemName">Ice/Hot Cappucino</span>
+                <span class="itemPrice">Rp 12.000</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="10000" data-name="Black Coffee" />
+                <span class="itemName">Ice/Hot Americano </span>
+                <span class="itemPrice"> Rp 10.000</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="7000" data-name="Green Tea Latte" />
+                <span class="itemName">Ice/Hot Lemon Tea</span>
+                <span class="itemPrice">Rp 7.000</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="5000" data-name="Cappucino" />
+                <span class="itemName">Ice/Hot Tea</span>
+                <span class="itemPrice">Rp 5.000</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="3000" data-name="French Fries" />
+                <span class="itemName">Mineral Water</span>
+                <span class="itemPrice">Rp 3.000</span>
+            </div>
+            <h4>Food</h4>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="24000" data-name="Green Tea Latte" />
+                <span class="itemName">Beef Steak</span>
+                <span class="itemPrice">Rp 24.000</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="22000" data-name="Green Tea Latte" />
+                <span class="itemName">Chicken Steak</span>
+                <span class="itemPrice">Rp 22.000</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="15000" data-name="Black Coffee" />
+                <span class="itemName">Fried Rice</span>
+                <span class="itemPrice">Rp 15.000</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="10000" data-name="Cappucino" />
+                <span class="itemName">Fried Noodles</span>
+                <span class="itemPrice">Rp 10.000</span>
+            </div>
+            <h4>Snack</h4>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="15000" data-name="Tuna Sandwich" />
+                <span class="itemName">Mix Platter</span>
+                <span class="itemPrice">Rp 15.000</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="12000" data-name="Fish and Chips" />
+                <span class="itemName">French fries</span>
+                <span class="itemPrice">Rp 12.000 </span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="12000" data-name="Mineral Water" />
+                <span class="itemName">Dimsum</span>
+                <span class="itemPrice">Rp 12.000</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="itemCheckbox" value="8000" data-name="French Fries" />
+                <span class="itemName">Daifuku Mochi</span>
+                <span class="itemPrice">Rp 8.000</span>
+            </div>
+        </div>
+    </form>
+    <div class="total">
+        Total: <span id="total">Rp 0</span>
+    </div>
+    <button id="cancelButton" style="display: none;">Cancel</button>
+</div>
+</div>
+<footer class="footer">
+    <p>App UTS WEB | Nindi |Teknologi Informasi</p>
+</footer>
+<script src="order.js"></script>
+</body>
+</html>
