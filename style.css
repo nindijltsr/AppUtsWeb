@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
-
 /* CSS UNTUK NAVBAR */
 .navbar {
   display: flex;
@@ -16,11 +14,9 @@
   background-color: #333;
   color: #fff;
 }
-
 .navbar-log {
   font-size: 20px;
 }
-
 /* CSS UNTUK WRAPPER */
 .wrapper {
   display: flex;
@@ -32,13 +28,11 @@
   background-size: cover;
   background-position: center;
 }
-
 @keyframes animateBg {
   100% {
     filter: hue-rotate(360deg);
   }
 }
-
 /* CSS UNTUK LOGIN BOX */
 .login-box {
   position: relative;
@@ -52,20 +46,17 @@
   align-items: center;
   backdrop-filter: blur(15px);
 }
-
 h2 {
   font-size: 2em;
   color: #fff;
   text-align: center;
 }
-
 .input-box {
   position: relative;
   width: 310px;
   margin: 35px 0;
   border-bottom: 1px solid #fff;
 }
-
 .input-box label {
   position: absolute;
   top: 50%;
@@ -76,12 +67,10 @@ h2 {
   pointer-events: none;
   transition: .5s;
 }
-
 .input-box input:focus ~ label,
 .input-box input:valid ~ label {
   top: -5px;
 }
-
 .input-box input {
   width: 100%;
   height: 50px;
@@ -92,7 +81,6 @@ h2 {
   color: #fff;
   padding: 0 35px 0 5px;
 }
-
 .input-box .icon {
   position: absolute;
   right: 8px;
@@ -100,7 +88,6 @@ h2 {
   color: #fff;
   transform: translateY(-50%);
 }
-
 /* PESAN ERROR DAN SUKSES */
 .error-message {
   color: rgb(255, 255, 255);
@@ -112,7 +99,6 @@ h2 {
   margin-bottom: 10px;
   display: none;
 }
-
 .success-message {
   position: absolute;
   top: 0;
@@ -128,7 +114,6 @@ h2 {
   justify-content: center;
   height: 50px;
 }
-
 .success-message button {
   position: absolute;
   top: 10px;
@@ -142,12 +127,10 @@ h2 {
   height: 30px;
   justify-content: center;
 }
-
 .success-message button:hover {
   background: rgba(88, 255, 102, 0.37);
   color: rgb(255, 255, 255);
 }
-
 /* TOMBOL */
 button {
   width: 100%;
@@ -160,7 +143,6 @@ button {
   color: #000;
   font-weight: 500;
 }
-
 /* CSS UNTUK ORDER */
 .navbar-or {
   display: flex;
@@ -174,21 +156,17 @@ button {
   cursor: pointer;
   transition: .3s;
 }
-
 .navbar-or:hover {
   color: #82b5df;
 }
-
 .navbar-left-or {
   display: flex;
   align-items: center;
 }
-
 .navbar-right {
   display: flex;
   align-items: center;
 }
-
 .navbar-link {
   color: #fff;
   text-decoration: none;
@@ -196,11 +174,9 @@ button {
   font-size: 18px;
   transition: .3s;
 }
-
 .navbar-link:hover {
   color: #82b5df;
 }
-
 /* FORMULIR PESANAN */
 .orderForm {
   width: 400px;
@@ -214,27 +190,22 @@ button {
   backdrop-filter: blur(10px);
   color: whitesmoke;
 }
-
 .orderForm h2 {
   margin-bottom: 5px;
   cursor: pointer;
   transition: .3s;
 }
-
 .h2-order:hover {
   color: #82b5df;
 }
-
 /* ITEM DALAM FORMULIR */
 h4 {
   margin-top: 6px;
   cursor: pointer;
 }
-
 h4:hover {
   color: #82b5df;
 }
-
 .item {
   width: 100%;
   margin: 1px;
@@ -246,22 +217,18 @@ h4:hover {
   transition: .3s;
   cursor: pointer;
 }
-
 .item:hover {
   background-color: #000000cb;
   color: #a9cce9;
 }
-
 .itemName {
   flex: 1;
   margin-right: 20px;
 }
-
 .itemCheckbox {
   margin-right: 8px;
   cursor: pointer;
 }
-
 /* TOMBOL BATAL */
 #cancelButton {
   background-color: #dc3545;
@@ -274,11 +241,9 @@ h4:hover {
   height: 40px;
   width: 100px;
 }
-
 #cancelButton:hover {
   background-color: #c82333;
 }
-
 /* FOOTER */
 .footer {
   background-color: #333;
