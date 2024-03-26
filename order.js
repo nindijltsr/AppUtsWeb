@@ -1,13 +1,10 @@
 const itemCheckboxes = document.querySelectorAll('.itemCheckbox');
 const total = document.querySelector('#total');
 const cancelButton = document.getElementById('cancelButton');
-
 let selectedItems = {};
-
 itemCheckboxes.forEach(checkbox => {
   checkbox.addEventListener('change', updateSelection);
 });
-
 function updateSelection(event) {
   const itemName = event.target.dataset.name;
   const itemPrice = parseInt(event.target.value);
@@ -17,11 +14,9 @@ function updateSelection(event) {
   } else {
     delete selectedItems[itemName];
   }
-  
   updateTotal();
   toggleCancelButton();
 }
-
 function updateTotal() {
   let totalPrice = 0;
   for (const itemName in selectedItems) {
@@ -29,7 +24,6 @@ function updateTotal() {
   }
   total.textContent = 'Rp ' + totalPrice.toLocaleString();
 }
-
 function toggleCancelButton() {
   if (Object.keys(selectedItems).length > 0) {
     cancelButton.style.display = 'block';
@@ -37,7 +31,6 @@ function toggleCancelButton() {
     cancelButton.style.display = 'none';
   }
 }
-
 cancelButton.addEventListener('click', () => {
   itemCheckboxes.forEach(checkbox => {
     checkbox.checked = false;
